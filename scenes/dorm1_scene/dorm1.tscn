@@ -1,3 +1,13 @@
-[gd_scene format=3 uid="uid://bumv3wo5shw4t"]
+[gd_scene load_steps=2 format=3 uid="uid://bumv3wo5shw4t"]
+
+[ext_resource type="Texture2D" uid="uid://c8mmr8u4nryo" path="res://scenes/major_scene/placeholder_bg.png" id="1_ovtyf"]
 
 [node name="dorm1" type="Node2D"]
+
+[node name="PlaceholderBg" type="Sprite2D" parent="."]
+position = Vector2(160, 90)
+texture = ExtResource("1_ovtyf")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(160, 90)
+zoom = Vector2(3.6, 3.6)
