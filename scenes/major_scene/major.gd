@@ -8,7 +8,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	print(choice)
+	pass
 
 func _input(event):
 	if event is InputEventKey:
@@ -26,6 +26,11 @@ func _input(event):
 			elif choice == 4:
 				# GO TO MAJOR DESCRIPTION SCENE
 				choice = 4
+			PlayerVariables.major = choice
+			if choice < 4:
+				get_tree().change_scene_to_file("res://scenes/dorm1_scene/dorm1.tscn")
+			else:
+				get_tree().change_scene_to_file("res://scenes/major_scene/major_desc/major_desc.tscn")
 		elif event.pressed and event.keycode == KEY_DELETE or event.keycode == KEY_BACKSPACE:
 			choice = 0;
 		elif event.pressed and event.keycode == KEY_1 && choice == 0:

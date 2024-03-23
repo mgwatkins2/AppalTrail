@@ -17,8 +17,15 @@ config/icon="res://assets/graphics/icon.svg"
 
 [autoload]
 
-Global="*res://scenes/global_data/global.tscn"
+PlayerVariables="*res://scenes/global_data/PlayerVariables.gd"
+
+[gui]
+
+theme/custom_font="res://assets/Monocraft-no-ligatures.ttf"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
+textures/decals/filter=0
+textures/light_projectors/filter=0
