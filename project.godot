@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="AppalTrail"
+run/main_scene="res://scenes/start_scene/start.tscn"
 config/features=PackedStringArray("4.1", "Mobile")
 config/icon="res://assets/graphics/icon.svg"
+
+[autoload]
+
+Global="*res://scenes/global_data/global.tscn"
 
 [rendering]
 

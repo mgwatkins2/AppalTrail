@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqk28mcq4hnaj"]
+
+[ext_resource type="Texture2D" uid="uid://c8mmr8u4nryo" path="res://scenes/major_scene/placeholder_bg.png" id="1_jyhy1"]
+[ext_resource type="Script" path="res://scenes/major_scene/major.gd" id="1_mou2q"]
+
+[node name="major" type="Node2D"]
+script = ExtResource("1_mou2q")
+
+[node name="PlaceholderBg" type="Sprite2D" parent="."]
+position = Vector2(160, 90)
+texture = ExtResource("1_jyhy1")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(161, 90)
+zoom = Vector2(3.6, 3.6)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 11.0
+offset_right = 304.0
+offset_bottom = 139.0
+text = "Choose your major
+1. Business
+2. Computer Science
+3. Elementary Education
+4. Learn the difference"
