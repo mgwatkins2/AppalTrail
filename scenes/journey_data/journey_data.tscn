@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dki4bs2uo8ri4"]
+
+[ext_resource type="Script" path="res://scenes/journey_data/JourneyData.gd" id="1_ogep1"]
+
+[node name="journey_data" type="Node2D"]
+script = ExtResource("1_ogep1")

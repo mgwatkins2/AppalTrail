@@ -7,17 +7,18 @@
 script = ExtResource("1_d5f1i")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(160, 90)
-zoom = Vector2(3.6, 3.6)
+zoom = Vector2(1.8, 1.8)
 
 [node name="PlaceholderBg" type="Sprite2D" parent="."]
-position = Vector2(160, 90)
+scale = Vector2(2, 2)
 texture = ExtResource("1_vvrrr")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 texture_filter = 1
 texture_repeat = 1
-offset_right = 263.0
-offset_bottom = 122.0
+offset_left = -192.0
+offset_top = -113.0
+offset_right = 71.0
+offset_bottom = 9.0
 text = "(Descriptions)
 Press enter to return"

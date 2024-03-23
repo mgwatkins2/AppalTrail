@@ -7,18 +7,18 @@
 script = ExtResource("1_u4twq")
 
 [node name="Placeholder" type="Sprite2D" parent="."]
-position = Vector2(160, 90)
+scale = Vector2(2, 2)
 texture = ExtResource("1_745wt")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(160, 90)
-zoom = Vector2(3.6, 3.6)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 texture_filter = 1
-offset_left = 1.0
-offset_right = 305.0
-offset_bottom = 120.0
+offset_left = -112.0
+offset_top = -128.0
+offset_right = 192.0
+offset_bottom = -8.0
 text = "Start screen.
 Press enter to start."
 scroll_active = false
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.8, 1.8)

@@ -17,7 +17,8 @@ config/icon="res://assets/graphics/icon.svg"
 
 [autoload]
 
-PlayerVariables="*res://scenes/global_data/PlayerVariables.gd"
+PlayerVariables="*res://scenes/player_vars/PlayerVariables.gd"
+JourneyData="*res://scenes/journey_data/JourneyData.gd"
 
 [gui]
 

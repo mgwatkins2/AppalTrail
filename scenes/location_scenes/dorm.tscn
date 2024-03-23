@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dboilb6x5ha4g"]
+
+[ext_resource type="Script" path="res://scenes/location_scenes/dorm.gd" id="1_662dc"]
+[ext_resource type="Texture2D" uid="uid://csy8g64n43ncs" path="res://scenes/start_scene/placeholder_bg.png" id="2_o81k2"]
+
+[node name="dorm" type="Node2D"]
+script = ExtResource("1_662dc")
+
+[node name="PlaceholderBg" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("2_o81k2")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.8, 1.8)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -164.0
+offset_top = 84.0
+offset_right = 205.0
+offset_bottom = 134.0
+text = "Dorm info
+Press Enter"
