@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://cl187pxw2lfvh"]
+
+[ext_resource type="Script" path="res://scenes/start_scene/info_dump.gd" id="1_m78sb"]
+[ext_resource type="Texture2D" uid="uid://ctyjtlhttv8qn" path="res://assets/graphics/black_bg.png" id="1_mlrmi"]
+
+[node name="info_dump" type="Node2D"]
+script = ExtResource("1_m78sb")
+
+[node name="BlackBg" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_mlrmi")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.8, 1.8)
+
+[node name="Info" type="RichTextLabel" parent="."]
+offset_left = -303.0
+offset_top = -165.0
+offset_right = 308.0
+offset_bottom = 169.0
+theme_override_font_sizes/normal_font_size = 20
+text = "Try playing The Appalachian Trail as a Mountaineer! Lace up your hiking boots and grab your textbooks to traverse campus. You’ll cross Rivers Street and through Sanford Mall to make it to three classes in time for dinner at the biggest dining hall on campus. Navigate through multiple obstacles, while controlling your pace, and tracking your time, energy, and money. 
+
+[ Press Enter to Continue ]"

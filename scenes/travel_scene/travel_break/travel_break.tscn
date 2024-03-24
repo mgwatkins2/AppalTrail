@@ -23,7 +23,7 @@ text = "You may:
 	1. Continue to class
 	2. Look at map
 	3. Change pace
-	4. Talk to peers"
+	4. Talk to Mountaineers"
 
 [node name="EnergyTxt" type="RichTextLabel" parent="."]
 offset_left = -271.0

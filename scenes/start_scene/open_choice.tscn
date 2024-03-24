@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://byn6dj2qokgle"]
+
+[ext_resource type="Script" path="res://scenes/start_scene/open_choice.gd" id="1_7uovc"]
+[ext_resource type="Texture2D" uid="uid://ctyjtlhttv8qn" path="res://assets/graphics/black_bg.png" id="2_aj3ai"]
+
+[node name="open_choice" type="Node2D"]
+script = ExtResource("1_7uovc")
+
+[node name="BlackBg" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("2_aj3ai")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.8, 1.8)
+
+[node name="optionsTxt" type="RichTextLabel" parent="."]
+offset_left = -302.0
+offset_top = -156.0
+offset_right = 349.0
+offset_bottom = -69.0
+theme_override_font_sizes/normal_font_size = 25
+text = "You may:
+	1. Travel to class
+	2. Learn about the game"
+
+[node name="choiceTxt" type="RichTextLabel" parent="."]
+offset_left = -302.0
+offset_top = 17.0
+offset_right = 229.0
+offset_bottom = 172.0
+theme_override_font_sizes/normal_font_size = 25
+text = "What is your choice? "
