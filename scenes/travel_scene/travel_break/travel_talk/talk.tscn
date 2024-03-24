@@ -1,3 +1,29 @@
-[gd_scene format=3 uid="uid://blfqh7876r6d5"]
+[gd_scene load_steps=3 format=3 uid="uid://blfqh7876r6d5"]
+
+[ext_resource type="Texture2D" uid="uid://csy8g64n43ncs" path="res://scenes/start_scene/placeholder_bg.png" id="1_p5bnp"]
+[ext_resource type="Script" path="res://scenes/travel_scene/travel_break/travel_talk/talk.gd" id="1_tmmfq"]
 
 [node name="talk" type="Node2D"]
+script = ExtResource("1_tmmfq")
+
+[node name="PlaceholderBg" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_p5bnp")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.8, 1.8)
+
+[node name="talkTxt" type="RichTextLabel" parent="."]
+offset_left = -309.0
+offset_top = -171.0
+offset_right = 312.0
+offset_bottom = 87.0
+theme_override_font_sizes/normal_font_size = 20
+
+[node name="contTxt" type="RichTextLabel" parent="."]
+offset_left = -306.0
+offset_top = 123.0
+offset_right = 277.0
+offset_bottom = 163.0
+theme_override_font_sizes/normal_font_size = 20
+text = "[ Press Enter to Continue ]"
