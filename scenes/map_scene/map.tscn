@@ -1,19 +1,19 @@
 [gd_scene load_steps=4 format=3 uid="uid://jjykj4s784rd"]
 
 [ext_resource type="Script" path="res://scenes/map_scene/map.gd" id="1_qg8o4"]
-[ext_resource type="Texture2D" uid="uid://dp166wh81mwbi" path="res://assets/graphics/Screen Shot 2024-03-24 at 1.28.26 AM.png" id="1_ql4tw"]
-[ext_resource type="Texture2D" uid="uid://ctyjtlhttv8qn" path="res://assets/graphics/black_bg.png" id="2_k5mb5"]
+[ext_resource type="Texture2D" uid="uid://ctyjtlhttv8qn" path="res://assets/graphics/backgrounds/black_bg.png" id="2_388yk"]
+[ext_resource type="Texture2D" uid="uid://dp166wh81mwbi" path="res://assets/graphics/backgrounds/Screen Shot 2024-03-24 at 1.28.26 AM.png" id="3_aurcu"]
 
 [node name="map" type="Node2D"]
 script = ExtResource("1_qg8o4")
 
 [node name="BlackBg" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
-texture = ExtResource("2_k5mb5")
+texture = ExtResource("2_388yk")
 
 [node name="map" type="Sprite2D" parent="."]
 scale = Vector2(0.3, 0.3)
-texture = ExtResource("1_ql4tw")
+texture = ExtResource("3_aurcu")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(1.8, 1.8)

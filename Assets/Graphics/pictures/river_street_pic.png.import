@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dp166wh81mwbi"
-path="res://.godot/imported/Screen Shot 2024-03-24 at 1.28.26 AM.png-820833555a810f896ffd3c0fed7a61a9.ctex"
+uid="uid://mo01utl6f2fw"
+path="res://.godot/imported/river_street_pic.png-cfa240fbdac509f85f8f7922792de2b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/graphics/Screen Shot 2024-03-24 at 1.28.26 AM.png"
-dest_files=["res://.godot/imported/Screen Shot 2024-03-24 at 1.28.26 AM.png-820833555a810f896ffd3c0fed7a61a9.ctex"]
+source_file="res://assets/graphics/pictures/river_street_pic.png"
+dest_files=["res://.godot/imported/river_street_pic.png-cfa240fbdac509f85f8f7922792de2b7.ctex"]
 
 [params]
 

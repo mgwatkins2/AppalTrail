@@ -1,14 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://cl187pxw2lfvh"]
 
 [ext_resource type="Script" path="res://scenes/start_scene/info_dump.gd" id="1_m78sb"]
-[ext_resource type="Texture2D" uid="uid://ctyjtlhttv8qn" path="res://assets/graphics/black_bg.png" id="1_mlrmi"]
+[ext_resource type="Texture2D" uid="uid://ctyjtlhttv8qn" path="res://assets/graphics/backgrounds/black_bg.png" id="2_bbpxa"]
 
 [node name="info_dump" type="Node2D"]
 script = ExtResource("1_m78sb")
 
 [node name="BlackBg" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
-texture = ExtResource("1_mlrmi")
+texture = ExtResource("2_bbpxa")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(1.8, 1.8)

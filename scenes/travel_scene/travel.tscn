@@ -1,14 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://evnjeuttgyuk"]
 
-[ext_resource type="Texture2D" uid="uid://dt3itrs47dum8" path="res://assets/graphics/travel_bg.png" id="1_jwtff"]
 [ext_resource type="Script" path="res://scenes/travel_scene/travel.gd" id="1_ool7r"]
+[ext_resource type="Texture2D" uid="uid://dt3itrs47dum8" path="res://assets/graphics/backgrounds/travel_bg.png" id="2_dolvi"]
 
 [node name="travel" type="Node2D"]
 script = ExtResource("1_ool7r")
 
 [node name="TravelBg" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)
-texture = ExtResource("1_jwtff")
+texture = ExtResource("2_dolvi")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(1.8, 1.8)
