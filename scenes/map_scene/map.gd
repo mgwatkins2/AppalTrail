@@ -13,4 +13,4 @@ func _process(delta):
 func _input(event):
 	if event is InputEventKey:
 		if event.pressed and event.keycode == KEY_ENTER or event.keycode == KEY_SPACE:
-			get_tree().change_scene_to_file("res://scenes/travel_scene/travel.tscn")
+			get_tree().change_scene_to_file("res://scenes/travel_scene/travel_break/travel_break.tscn")

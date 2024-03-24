@@ -1,10 +1,28 @@
-[gd_scene load_steps=3 format=3 uid="uid://dboilb6x5ha4g"]
+[gd_scene load_steps=3 format=3 uid="uid://cnrlbf38q0u8u"]
 
-[ext_resource type="Script" path="res://scenes/location_scenes/dorm.gd" id="1_662dc"]
 [ext_resource type="Texture2D" uid="uid://csy8g64n43ncs" path="res://scenes/start_scene/placeholder_bg.png" id="2_o81k2"]
 
+[sub_resource type="GDScript" id="GDScript_ycj8d"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+func _input(event):
+	if event is InputEventKey:
+		if event.pressed and event.keycode == KEY_ENTER or event.keycode == KEY_SPACE:
+			get_tree().change_scene_to_file(\"res://scenes/travel_scene/travel.tscn\")
+"
+
 [node name="dorm" type="Node2D"]
-script = ExtResource("1_662dc")
+script = SubResource("GDScript_ycj8d")
 
 [node name="PlaceholderBg" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)

@@ -20,6 +20,11 @@ config/icon="res://assets/graphics/icon.svg"
 PlayerVariables="*res://scenes/player_vars/PlayerVariables.gd"
 JourneyData="*res://scenes/journey_data/JourneyData.gd"
 
+[display]
+
+window/size/mode=3
+window/stretch/mode="viewport"
+
 [gui]
 
 theme/custom_font="res://assets/Monocraft-no-ligatures.ttf"

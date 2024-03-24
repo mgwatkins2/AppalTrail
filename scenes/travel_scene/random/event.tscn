@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://eq47smk6mry6"]
+
+[ext_resource type="Script" path="res://scenes/travel_scene/random/event.gd" id="1_rayvx"]
+[ext_resource type="Texture2D" uid="uid://ctyjtlhttv8qn" path="res://assets/graphics/black_bg.png" id="2_btmpk"]
+
+[node name="event" type="Node2D"]
+script = ExtResource("1_rayvx")
+
+[node name="BlackBg" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("2_btmpk")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.8, 1.8)
+
+[node name="randTxt" type="RichTextLabel" parent="."]
+offset_left = -295.0
+offset_top = -161.0
+offset_right = 300.0
+offset_bottom = 162.0
+theme_override_font_sizes/normal_font_size = 25

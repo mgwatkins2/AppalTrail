@@ -4,7 +4,7 @@ var dialogue = ["An old friend from high school says: \n\n\"Oh hey, I haven’t 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var randVal = PlayerVariables.rnd.randf_range(0, 10.0)
+	var randVal = PlayerVariables.rnd.randi_range(0, 10)
 	$talkTxt.text = dialogue[randVal]
 
 
