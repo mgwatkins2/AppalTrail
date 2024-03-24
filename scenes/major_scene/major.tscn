@@ -10,16 +10,25 @@ script = ExtResource("1_mou2q")
 scale = Vector2(2, 2)
 texture = ExtResource("1_jyhy1")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = -256.0
-offset_top = -133.0
-offset_right = 37.0
-offset_bottom = 6.0
-text = "Choose your major
-1. Business
-2. Computer Science
-3. Elementary Education
-4. Learn the difference"
+[node name="optionsTxt" type="RichTextLabel" parent="."]
+offset_left = -302.0
+offset_top = -158.0
+offset_right = 304.0
+offset_bottom = 71.0
+theme_override_font_sizes/normal_font_size = 20
+text = "You must decide what major you want to be. Each major acts as a level of difficulty. Business majors have the best resources, and elementary education majors have the worst. 
+	1. Business major
+	2. Computer Science Major
+	3. Elementary Education Major 
+	4. Learn about the choices"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(1.8, 1.8)
+
+[node name="choiceTxt" type="RichTextLabel" parent="."]
+offset_left = -294.0
+offset_top = 101.0
+offset_right = 271.0
+offset_bottom = 168.0
+theme_override_font_sizes/normal_font_size = 20
+text = "What is your choice? "

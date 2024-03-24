@@ -21,11 +21,16 @@ func _input(event):
 				get_tree().change_scene_to_file("res://scenes/pace_scene/pace.tscn")
 		elif event.pressed and event.keycode == KEY_DELETE or event.keycode == KEY_BACKSPACE:
 			choice = 0;
+			$choiceTxt.text = "What is your choice? "
 		elif event.pressed and event.keycode == KEY_1 && choice == 0:
 			choice = 1
+			$choiceTxt.text = "What is your choice? 1"
 		elif event.pressed and event.keycode == KEY_2 && choice == 0:
 			choice = 2
+			$choiceTxt.text = "What is your choice? 2"
 		elif event.pressed and event.keycode == KEY_3 && choice == 0:
 			choice = 3
+			$choiceTxt.text = "What is your choice? 3"
 		elif event.pressed and event.keycode == KEY_4 && choice == 0:
 			choice = 4
+			$choiceTxt.text = "What is your choice? 4"

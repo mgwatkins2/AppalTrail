@@ -13,12 +13,23 @@ texture = ExtResource("1_k75nw")
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(1.8, 1.8)
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = -268.0
-offset_top = -126.0
-offset_right = 19.0
-offset_bottom = 27.0
-text = "Select your pace:
-1. Slow
-2. Medium
-3. Fast"
+[node name="paceOptions" type="RichTextLabel" parent="."]
+offset_left = -295.0
+offset_top = -159.0
+offset_right = 304.0
+offset_bottom = 162.0
+theme_override_font_sizes/normal_font_size = 20
+text = "Now decide what pace to start with. How fast you push yourself will affect how much energy you expend.  Make sure you make it to class on time but avoid running down your energy too rapidly. You will have opportunities later to buy energy drinks, but they’ll cost you. You will be able to change this at any point. 
+
+Select your pace:
+	1. Saunter
+	2. Steady
+	3. Sprint"
+
+[node name="paceChoice" type="RichTextLabel" parent="."]
+offset_left = -295.0
+offset_top = 117.0
+offset_right = 298.0
+offset_bottom = 143.0
+theme_override_font_sizes/normal_font_size = 20
+text = "What is your choice? "

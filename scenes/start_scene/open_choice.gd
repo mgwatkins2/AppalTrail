@@ -14,7 +14,7 @@ func _input(event):
 	if event is InputEventKey:
 		if event.pressed and event.keycode == KEY_ENTER:
 			if choice == 1:
-				get_tree().change_scene_to_file("res://scenes/major_scene/major.tscn")
+				get_tree().change_scene_to_file("res://scenes/start_scene/introduction.tscn")
 			elif choice == 2:
 				get_tree().change_scene_to_file("res://scenes/start_scene/info_dump.tscn")
 		elif event.pressed and event.keycode == KEY_1 and choice == 0:

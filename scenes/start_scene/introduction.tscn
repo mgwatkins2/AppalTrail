@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxp82n764w33g"]
+
+[ext_resource type="Texture2D" uid="uid://csy8g64n43ncs" path="res://scenes/start_scene/placeholder_bg.png" id="1_1j3v3"]
+[ext_resource type="Script" path="res://scenes/start_scene/introduction.gd" id="1_rs11p"]
+
+[node name="introduction" type="Node2D"]
+script = ExtResource("1_rs11p")
+
+[node name="PlaceholderBg" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_1j3v3")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.8, 1.8)
+
+[node name="introTxt" type="RichTextLabel" parent="."]
+offset_left = -307.0
+offset_top = -168.0
+offset_right = 307.0
+offset_bottom = 171.0
+theme_override_font_sizes/normal_font_size = 20
+text = "You are a student at Appalachian State University. You’ve just woken up at 8am to a text from your friend about meeting them for dinner at Central at 6pm. You have campus to navigate and three classes to get to, will you survive the day and get to hang out with your friend?
+
+[ Press Enter to Continue ]"

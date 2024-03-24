@@ -13,12 +13,14 @@ zoom = Vector2(1.8, 1.8)
 scale = Vector2(2, 2)
 texture = ExtResource("1_vvrrr")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
+[node name="descTxt" type="RichTextLabel" parent="."]
 texture_filter = 1
 texture_repeat = 1
-offset_left = -192.0
-offset_top = -113.0
-offset_right = 71.0
-offset_bottom = 9.0
-text = "(Descriptions)
-Press enter to return"
+offset_left = -306.0
+offset_top = -165.0
+offset_right = 308.0
+offset_bottom = 170.0
+theme_override_font_sizes/normal_font_size = 20
+text = "Each major possesses different levels of advantage. Business majors start the game with the most money and the highest energy. Meanwhile Computer Science Majors have a slightly reduced amount of money and reduced energy. Elementary Education Majors are the hardest level of difficulty, starting with the least amount of money and energy. 
+
+[ Press Enter to Continue ]"
