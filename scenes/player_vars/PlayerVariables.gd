@@ -8,6 +8,7 @@ var appcard = true
 var major = 0
 var energy = 100
 var timeProg = 5
+var pDone = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

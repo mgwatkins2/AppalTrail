@@ -3,7 +3,7 @@ var choice = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -16,7 +16,12 @@ func _input(event):
 			print("Enter Key!")
 			JourneyData.pace = choice
 			JourneyData.nextLandmark = 1
-			get_tree().change_scene_to_file("res://scenes/location_scenes/dorm.tscn")
+			print("pDone: "+str(PlayerVariables.pDone))
+			if PlayerVariables.pDone == false:
+				PlayerVariables.pDone = true
+				get_tree().change_scene_to_file("res://scenes/location_scenes/dorm.tscn")
+			else:
+				get_tree().change_scene_to_file("res://scenes/travel_scene/travel_break/travel_break.tscn")
 		elif event.pressed and event.keycode == KEY_DELETE or event.keycode == KEY_BACKSPACE:
 			choice = 0;
 		elif event.pressed and event.keycode == KEY_1 && choice == 0:
