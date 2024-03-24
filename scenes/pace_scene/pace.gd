@@ -12,19 +12,8 @@ func _process(delta):
 
 func _input(event):
 	if event is InputEventKey:
-		if event.pressed and event.keycode == KEY_ENTER:
+		if event.pressed and event.keycode == KEY_ENTER and choice > 0:
 			print("Enter Key!")
-			if choice == 1:
-				# SET PACE TO SLOW
-				choice = 1
-			elif choice == 2:
-				# SET PACE TO MEDIUM
-				choice = 2
-			elif choice == 3:
-				# SET PACE TO FAST
-				choice = 3
-			PlayerVariables.major = choice
-			# Go to the travel scene
 			JourneyData.pace = choice
 			JourneyData.nextLandmark = 1
 			get_tree().change_scene_to_file("res://scenes/location_scenes/dorm.tscn")

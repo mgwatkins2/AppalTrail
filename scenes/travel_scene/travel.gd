@@ -1,0 +1,29 @@
+extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	$EnergyTxt.text = "Energy: " + str(PlayerVariables.energy)
+	if JourneyData.pace == 1:
+		$PaceTxt.text = "Pace: Saunter"
+	elif JourneyData.pace == 2:
+		$PaceTxt.text = "Pace: Steady"
+	else:
+		$PaceTxt.text = "Pace: Sprint"
+	
+	if JourneyData.weather == 0:
+		$WeatherTxt.text = "Weather: Clear"
+	elif JourneyData.weather == 1:
+		$WeatherTxt.text = "Weather: Windy"
+	elif JourneyData.weather == 2:
+		$WeatherTxt.text = "Weather: Rainy"
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+
+
+func _input(event):
+	if event is InputEventKey:
+		if event.pressed and event.keycode == KEY_ENTER or event.keycode == KEY_SPACE:
+			get_tree().change_scene_to_file("res://scenes/travel_scene/travel_break/travel_break.tscn")

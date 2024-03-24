@@ -5,7 +5,6 @@ var fun = 0
 var confidence = 0
 var money = 0.00
 var appcard = true
-var weather = 0
 var major = 0
 var energy = 100
 var timeProg = 5
@@ -28,10 +27,5 @@ func setMajor(maj):
 	elif maj == 3:
 		money = 10
 
-func randWeather():
-	var flip = rnd.randi_range(0, 1)
-	if flip == 0:
-		weather = 0
-	elif flip == 1:
-		weather = rnd.randi_range(0, 2)
+
 
