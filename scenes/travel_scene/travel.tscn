@@ -1,7 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://evnjeuttgyuk"]
+[gd_scene load_steps=6 format=3 uid="uid://evnjeuttgyuk"]
 
 [ext_resource type="Script" path="res://scenes/travel_scene/travel.gd" id="1_ool7r"]
 [ext_resource type="Texture2D" uid="uid://dt3itrs47dum8" path="res://assets/graphics/backgrounds/travel_bg.png" id="2_dolvi"]
+[ext_resource type="Texture2D" uid="uid://decrm8xwrx4c6" path="res://assets/graphics/sprites/guy.png" id="3_1koh6"]
+[ext_resource type="Texture2D" uid="uid://bx0fjqo8tqxr5" path="res://assets/graphics/sprites/guy2.png" id="4_853fu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gufoq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_1koh6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_853fu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="travel" type="Node2D"]
 script = ExtResource("1_ool7r")
@@ -15,41 +31,39 @@ zoom = Vector2(1.8, 1.8)
 
 [node name="EnergyTxt" type="RichTextLabel" parent="."]
 offset_left = -296.0
-offset_top = 58.0
+offset_top = 42.0
 offset_right = 61.0
-offset_bottom = 95.0
+offset_bottom = 79.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Energy: "
 
 [node name="NextTxt" type="RichTextLabel" parent="."]
-offset_left = -296.0
 offset_top = 42.0
-offset_right = 134.0
+offset_right = 430.0
 offset_bottom = 59.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Next Stop: "
 
 [node name="PaceTxt" type="RichTextLabel" parent="."]
-offset_left = -296.0
-offset_top = 74.0
-offset_right = 125.0
-offset_bottom = 91.0
+offset_top = 58.0
+offset_right = 421.0
+offset_bottom = 75.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Pace: "
 
 [node name="WeatherTxt" type="RichTextLabel" parent="."]
 offset_left = -296.0
-offset_top = 90.0
+offset_top = 58.0
 offset_right = 63.0
-offset_bottom = 107.0
+offset_bottom = 75.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Weather: "
 
 [node name="TimeTxt" type="RichTextLabel" parent="."]
 offset_left = -296.0
-offset_top = 27.0
+offset_top = 26.0
 offset_right = 24.0
-offset_bottom = 44.0
+offset_bottom = 43.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Time: "
 
@@ -60,3 +74,28 @@ offset_right = 181.0
 offset_bottom = 159.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "[ Press Enter to take a break ]"
+
+[node name="MoneyTxt" type="RichTextLabel" parent="."]
+offset_left = -296.0
+offset_top = 74.0
+offset_right = -74.0
+offset_bottom = 94.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Money:"
+
+[node name="DistanceTxt" type="RichTextLabel" parent="."]
+offset_top = 26.0
+offset_right = 192.0
+offset_bottom = 46.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Distance: "
+
+[node name="LocIcon" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+
+[node name="guyMan" type="AnimatedSprite2D" parent="."]
+position = Vector2(-257, -54)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_gufoq")
+frame = 1
+frame_progress = 0.467458
